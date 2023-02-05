@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap');
+
+button{
+    background-color: #eeeeff;
+    padding: 25px;
+    font-size: 1.6rem;
+}
+
+.title_area{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+    font-family: 'Kanit', sans-serif;
+    background-color: #fbffbc;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+button:disabled {
+    background-color: #999999;
+}
+
+.prompt{
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+div.mode_button_area{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0;
+    padding-top: 10;
+}
+
+div.mode_button_area > *:nth-child(1){
+    border-right: 0;
+}
+
+#letter_buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#letter_buttons > *:nth-child(n+5){
+    border-top: 0px;
+}
+#letter_buttons > *:nth-child(-n+2){
+    border-right: 0px;
+}
+#letter_buttons > *:nth-child(-n-3){
+    border-right: 0px;
+    background-color:blanchedalmond
+}
+
+body {
+    text-align: center;
+}
+
+.phone_frame {
+    width: 360px;
+    height: 800px;
+    background-color:cornsilk;
+    margin: 0 auto;
+    position: relative;
+}
+
+#hint_button {
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 90%; /* Need a specific value to work */
+    bottom: 0;
+}

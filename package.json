@@ -1,0 +1,27 @@
+{
+  "name": "cw_buddy",
+  "version": "0.0.0",
+  "description": "A browser tool for teaching morse code",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/beantosser/cw_buddy.git"
+  },
+  "keywords": [
+    "morse",
+    "code",
+    "ham",
+    "amateur",
+    "radio",
+    "cw"
+  ],
+  "author": "Michael Jones",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/beantosser/cw_buddy/issues"
+  },
+  "homepage": "https://github.com/beantosser/cw_buddy#readme"
+}
