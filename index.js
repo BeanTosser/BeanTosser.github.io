@@ -141,7 +141,9 @@ function pressLetter(letterIndex){
   if(allowEntry){
     allowEntry = false;
     currentEntry = letterButtons[letterIndex];
-    if(currentEntry === currentSymbol[0]){
+    console.log("You pressed: " + currentEntry);
+    console.log("The correct answer was: " + currentSymbol[0]);
+    if(currentEntry.toLowerCase() === currentSymbol[0].toLowerCase()){
       rewardElement.innerHTML = "Correct!";
       setTimeout(function(){
         reset(false);
