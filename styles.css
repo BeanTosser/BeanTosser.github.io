@@ -5,16 +5,41 @@ button{
     padding: 25px;
     font-size: 1.6rem;
 }
+.circle_button{
+    border-radius: 50%;
+}
 
 .title_area{
     font-size: 2rem;
     font-weight: bold;
-    line-height: 1;
+    line-height: 0.5;
     font-family: 'Kanit', sans-serif;
     background-color: #fbffbc;
     height: 15%;
     display: flex;
     justify-content: center;
+}
+
+.code_button{
+    font-size: 4em;
+    line-height: 0.5;
+}
+
+#codeButtons{
+    display: grid;
+    grid-template:
+    "ditbox ditbox ditbox dahbox dahbox dahbox" auto
+    "  .      .    cirbox cirbox   .      .   " auto / 1fr 1fr 12% 12% 1fr 1fr;
+}
+
+.dit_button{
+    grid-area: ditbox;
+}
+.dah_button{
+    grid-area: dahbox;
+}
+.circle_button{
+    grid-area: cirbox;
 }
 
 button:disabled {
@@ -30,7 +55,7 @@ div.mode_button_area{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 0;
-    padding-top: 10;
+    padding-top: 10%;
 }
 
 div.mode_button_area > *:nth-child(1){
@@ -45,9 +70,14 @@ div.mode_button_area > *:nth-child(1){
 #letter_buttons > *:nth-child(n+5){
     border-top: 0px;
 }
-#letter_buttons > *:nth-child(-n+2){
+#letter_buttons > *:nth-child(-n+3){
     border-right: 0px;
 }
+
+#letter_buttons > *:nth-child(n+5):nth-child(-n+7){
+    border-right: 0px;
+}
+
 #letter_buttons > *:nth-child(-n-3){
     border-right: 0px;
     background-color:blanchedalmond

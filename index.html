@@ -22,8 +22,10 @@
     <span id="hintElement"></span><br />
     <span id="rewardElement"></span><br />
     <div id="codeButtons">
-      <button onclick="enterDit()">.</button>
-      <button onclick="enterDah()">-</button>
+      <button onclick="enterDit()" class="dit_button code_button">.</button>
+      <button onclick="enterDah()" class="dah_button code_button">-</button>
+      <button class="circle_button" onmousedown="startOscillator()" onmouseup="stopOscillator()" onmouseexit="stopOscillator()">&nbsp</button>
+      <br />
     </div>
     <br />
     <br />
@@ -39,6 +41,10 @@
     </div>
     <br />
     <button onclick="showHint()" id="hint_button">Hint</button>
+    <br />
+    <span id="display_speed"></span> dits per minute
+    <br />
+    <input type="range" oninput="changeCodeSpeed(this.value)" id="speed_slider"/>
   </div>
   <script src="index.js"></script>
 </body>
